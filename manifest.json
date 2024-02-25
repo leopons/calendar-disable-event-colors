@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Calendar Disable Event Colors",
+  "version": "1.0",
+  "description": "Disable event-specific colors on google calendar. Useful to prevent coworkers' coloring habits from spilling to your own interface.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["*://calendar.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://calendar.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
