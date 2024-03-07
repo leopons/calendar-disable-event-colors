@@ -1,10 +1,10 @@
 function updateColors() {
   // For each event element
-  const elements = document.querySelectorAll(".EfQccc");
+  const elements = document.querySelectorAll(".GTG3wb");
 
   elements.forEach((element) => {
-    // Use the left border element (.uXJUmd) to get the correct color.
-    const child = element.querySelector(".uXJUmd");
+    // Use the left border element (.jSrjCf) to get the correct color.
+    const child = element.querySelector(".jSrjCf");
     if (child) {
       const childStyle = window.getComputedStyle(child);
       const targetColor = childStyle.backgroundColor;
@@ -16,8 +16,8 @@ function updateColors() {
       ) {
         element.style.backgroundColor = targetColor;
       } else {
-        // Update color of .lFe10c elements if they are not white
-        element.querySelectorAll(".lFe10c").forEach((innerChild) => {
+        // Update text color of .Jcb6qd elements if container is white
+        element.querySelectorAll(".Jcb6qd").forEach((innerChild) => {
           innerChild.style.color = targetColor;
         });
       }
